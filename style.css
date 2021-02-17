@@ -1,0 +1,29 @@
+* {
+    font-family: Arial;
+    font-size: 30px;
+}
+body {
+    background: url(https://www.toptal.com/designers/subtlepatterns/patterns/interlaced.png);
+}
+#container, .congratulation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+
+    border: 3px solid #444;
+    border-radius: 10px;
+    background-color: #999;
+    padding: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+#container>p {
+    color: rgb(255, 0, 0);
+    padding: 0px;
+    margin: 0 0 20px 0;
+}
+#timer {
+    width: 550px;
+}
