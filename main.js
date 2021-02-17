@@ -6,6 +6,15 @@ const endWork = new Date(2022, 6, 1);
 const container = document.getElementById('container');
 const blockTimer = document.getElementById('timer');
 
+(function optimizeForPhone() {
+    if (window.screen.width <= 482) {
+        container.style.width = '300px';
+        blockTimer.style.width = '300px';
+    } else {
+        return;
+    }
+})();
+
 function getCountRange(begin, end) {
     let delta = Math.abs(end - begin) / 1000;
     let days = Math.floor(delta / 86400);
